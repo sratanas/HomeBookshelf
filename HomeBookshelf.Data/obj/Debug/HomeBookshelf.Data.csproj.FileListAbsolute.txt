@@ -1,0 +1,6 @@
+C:\Users\stephanie.ratanas\source\repos\HomeBookshelf\HomeBookshelf.Data\obj\Debug\HomeBookshelf.Data.csprojResolveAssemblyReference.cache
+C:\Users\stephanie.ratanas\source\repos\HomeBookshelf\HomeBookshelf.Data\obj\Debug\HomeBookshelf.Data.csproj.CoreCompileInputs.cache
+C:\Users\stephanie.ratanas\source\repos\HomeBookshelf\HomeBookshelf.Data\bin\Debug\HomeBookshelf.Data.dll
+C:\Users\stephanie.ratanas\source\repos\HomeBookshelf\HomeBookshelf.Data\bin\Debug\HomeBookshelf.Data.pdb
+C:\Users\stephanie.ratanas\source\repos\HomeBookshelf\HomeBookshelf.Data\obj\Debug\HomeBookshelf.Data.dll
+C:\Users\stephanie.ratanas\source\repos\HomeBookshelf\HomeBookshelf.Data\obj\Debug\HomeBookshelf.Data.pdb
