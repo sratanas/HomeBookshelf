@@ -1,6 +1,6 @@
 ﻿using HomeBookshelf.Data;
 using HomeBookshelf.Web.Models;
-using System.Linq;
+using System.Collections.Generic;
 using System.Web.Mvc;
 
 namespace HomeBookshelf.Web.Controllers
@@ -36,16 +36,37 @@ namespace HomeBookshelf.Web.Controllers
         // GET: Books/Create
         public ActionResult Create()
         {
-            return View();
+
+
+            var bookLocations = new List<Location>();
+            AddBookFormModel model = new AddBookFormModel();
+            model.Locations = repository.GetLocations();
+
+            return View(model);
         }
 
         // POST: Books/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(AddBookFormModel addBookForm)
         {
             try
             {
-                // TODO: Add insert logic here
+                var author = new Author()
+                {
+                    FirstName = addBookForm.AuthorFirstName,
+                    LastName = addBookForm.AuthorLastName
+                };
+
+                var book = new Book
+                {
+                    Title = addBookForm.Title,
+                    AuthorId = author.Id,
+                    YearPublished = addBookForm.YearPublished,
+                    Genre = addBookForm.Genre,
+                    //Location = addBookForm.Location
+                };
+                 
+                repository.AddBook(book, author);
 
                 return RedirectToAction("Index");
             }

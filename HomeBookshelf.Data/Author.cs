@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace HomeBookshelf.Data
 {
-    public interface IBooksRepository
+    public class Author
     {
-        List<Book> GetBooks();
-        List<Location> GetLocations();
-        void AddBook(Book book, Author author);
-       
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
     }
 }

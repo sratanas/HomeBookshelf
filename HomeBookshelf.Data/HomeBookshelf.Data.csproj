@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Author.cs" />
     <Compile Include="Book.cs" />
     <Compile Include="BooksRepository.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="IBooksRepository.cs" />
+    <Compile Include="Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
